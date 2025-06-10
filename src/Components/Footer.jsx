@@ -4,7 +4,7 @@ function Footer({ items }) {
   if (!items.length)
     return (
       <p className="stats">
-        <em>Começe a colocar itens a sua lista !</em>
+        <em>Start putting some items on your list!</em>
       </p>
     );
 
@@ -15,8 +15,8 @@ function Footer({ items }) {
     <footer className="stats">
       <em>
         {percentStoredItems === 100
-          ? "Sua mala está pronta para viagem!"
-          : `Você tem ${numItems} items na sua lista, e você já guardou ${numStoredItems} (${percentStoredItems}%) itens na sua mala.`}
+          ? "You bags are all set, time to go!"
+          : `You've added ${numItems} items to your list, and have packed ${numStoredItems} (${percentStoredItems}%) items already.`}
       </em>
     </footer>
   );

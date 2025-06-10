@@ -19,7 +19,7 @@ function Form({ onAddItems }) {
 
   return (
     <form className="add-form" onSubmit={handleSubmit}>
-      <h3>O que você precisa para sua viagem?</h3>
+      <h3>What do you need for your trip?</h3>
       <select
         value={quantity}
         onChange={(e) => setQuantity(Number(e.target.value))}>
@@ -35,7 +35,7 @@ function Form({ onAddItems }) {
         value={description}
         onChange={(e) => setDescription(e.target.value)}
       />
-      <button>Adicionar</button>
+      <button>ADD</button>
     </form>
   );
 }

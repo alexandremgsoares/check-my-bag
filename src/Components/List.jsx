@@ -22,11 +22,11 @@ function List({ items, onDeleteItem, onToogle, onClearItems }) {
     <div className="list">
       <div className="actions">
         <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
-          <option value="descricao">Ordenar pela descrição</option>
-          <option value="input">Ordenar pela ordem adicionada</option>
-          <option value="packed">Ordenar por status </option>
+          <option value="descricao">Order by description</option>
+          <option value="input">Order by input</option>
+          <option value="packed">Order by packed items </option>
         </select>
-        <button onClick={() => onClearItems()}>Limpar lista</button>
+        <button onClick={() => onClearItems()}>Clear list</button>
       </div>
       <ul>
         {sortedItems.map((item) => (
